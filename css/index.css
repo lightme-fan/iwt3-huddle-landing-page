@@ -23,6 +23,9 @@ body {
   margin: 0;
   font-family: 'Public Sans'; }
 
+h1, h2 {
+  font-family: 'Poppins'; }
+
 .huddle_main {
   margin-top: 6rem; }
 
