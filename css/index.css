@@ -1,8 +1,34 @@
+@font-face {
+  font-family: 'Public Sans';
+  src: url("../fonts/PublicSans-Bold.woff2") format("woff2"), url("../fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"), url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Public Sans'; }
 
 .huddle_main {
   margin-top: 6rem; }
+
+button,
+a {
+  cursor: pointer; }
 
 .huddle_header--container {
   max-width: 1114px;
@@ -325,19 +351,29 @@ body {
     line-height: 2rem; }
   .footer_huddle .footer_huddle--paragraph {
     margin-bottom: 3rem; }
-  .footer_huddle .footer_huddle--contact span,
-  .footer_huddle .footer_huddle--email span {
-    margin-left: 2rem; }
+  .footer_huddle .footer_huddle--contact,
+  .footer_huddle .footer_huddle--email {
+    cursor: pointer; }
+    .footer_huddle .footer_huddle--contact span,
+    .footer_huddle .footer_huddle--email span {
+      margin-left: 2rem; }
   .footer_huddle .footer_huddle--email {
     margin-bottom: 3rem; }
   .footer_huddle .footer_huddle--media {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: start;
+    gap: 5%; }
     .footer_huddle .footer_huddle--media a {
       text-decoration: none;
       color: auto;
       color: #fff; }
+      .footer_huddle .footer_huddle--media a img {
+        width: 34px; }
 
 @media (min-width: 375px) {
   .footer {

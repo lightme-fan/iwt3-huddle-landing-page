@@ -71,6 +71,8 @@
 
     .footer_huddle--contact,
     .footer_huddle--email {
+        cursor: pointer;
+        
         span {
             margin-left: 2rem;
         }
@@ -82,9 +84,17 @@
 
     .footer_huddle--media {
         @include reset-list;
+        @include flex-display;
+        justify-content: start;
+        gap: 5%;
+
         a {
             @include reset-anchor;
             color: #fff;
+
+            img {
+                width: 34px;
+            }
         }
     }
 }
