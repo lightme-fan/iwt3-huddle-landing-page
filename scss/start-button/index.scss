@@ -1,0 +1,27 @@
+@import '../mixin';
+
+.huddle_started-button {
+    margin: 3rem 0;
+    
+    .huddle_started-button--container {
+        @include auto-width;
+        @include flex-display;
+        flex-direction: column;
+
+        .huddle_started-button--heading {
+            text-align: center;
+            font-size: 42px;
+        }
+
+        .huddle_started-button--element {
+            width: 259px;
+            padding: 1rem;
+            background-color: hsl(322, 100%, 66%);
+            border: none;
+            color: hsl(0deg, 0%, 100%);
+            border-radius: 50px;
+            margin: 4rem 0;
+            box-shadow: 0px 1px 16px 0px #000;
+        }
+    }
+}

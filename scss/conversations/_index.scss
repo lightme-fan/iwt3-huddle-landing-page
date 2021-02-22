@@ -1,0 +1,56 @@
+@import '../mixin';
+
+.huddle_conversations {
+    margin: 5rem 0;
+
+    .huddle_conversations--container {
+        @include auto-width;
+    }
+
+    .huddle_conversations--desc {
+        text-align: center;
+
+        .huddle_conversations--heading {
+            font-size: 34px;
+        }
+
+        .huddle_conversations--paragraph {
+            font-size: 22px;
+            line-height: 2rem;
+        }
+    }
+}
+
+.huddle_conversations--pic {
+    margin-bottom: 5rem;
+
+    .huddle_conversations--image {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .huddle_conversations {
+        padding-top: 3rem;
+        .huddle_conversations--container {
+            padding-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 40%;
+            align-items: center;
+            gap: 8%;
+        }
+
+        .huddle_conversations--desc {
+            text-align: start;
+
+            .huddle_conversations--heading {
+                font-size: 32px;
+            }
+
+            .huddle_conversations--paragraph {
+                font-size: 18px;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

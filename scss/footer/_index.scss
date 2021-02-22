@@ -1,0 +1,119 @@
+@import '../mixin';
+
+.footer { 
+    padding-top: 6rem;
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #fff;
+
+    .footer_container {
+        @include auto-width;
+    }
+}
+
+.footer_wrapper {
+    background-color: hsl(192, 100%, 9%); 
+    padding-bottom: 4rem;
+}
+
+.footer_form {
+    .footer_form--heading {
+        font-size: 34px;
+    }
+
+    .footer_form--paragraph {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
+    .footer_form--fieldset {
+        border: none;
+        @include flex-display;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 4rem 0;
+
+        .footer_form--input {
+            max-width: 1114px;
+            margin: auto;
+            padding: 22px;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .footer_form--button {
+            width: 262px;
+            padding: 22px;
+            background-color: hsl(322, 100%, 66%);
+            border: none;
+            color: hsl(0deg, 0%, 100%);
+            border-radius: 10px;
+            box-shadow: 0px 1px 16px 0px #000;
+            align-self: flex-end;
+        }
+    }
+}
+
+.footer_huddle {
+    font-size: 22px;
+    line-height: 2rem;
+    margin-top: 6rem;
+
+    a {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
+    .footer_huddle--paragraph {
+        margin-bottom: 3rem;
+    }
+
+    .footer_huddle--contact,
+    .footer_huddle--email {
+        span {
+            margin-left: 2rem;
+        }
+    }
+
+    .footer_huddle--email {
+        margin-bottom: 3rem;
+    }
+
+    .footer_huddle--media {
+        @include reset-list;
+        a {
+            @include reset-anchor;
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .footer { 
+        padding-top: 9rem; 
+        background-image: url('../images/bg-footer-top-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .footer_wrapper {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .footer_container {
+        @include flex-display;
+        flex-direction: row-reverse;
+        gap: 16%;
+
+        .footer_huddle {
+            margin-top: 0; 
+        }
+
+        form {
+            margin-top: 4rem;
+        }
+    }   
+}

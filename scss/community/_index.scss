@@ -1,0 +1,76 @@
+@import '../mixin';
+
+.huddle_community {
+    padding-bottom: 7rem;
+    // border-bottom-left-radius: 50px;
+    // border-bottom-right-radius: 50px;
+}
+
+.huddle_community--container {
+    @include auto-width;
+    @include flex-display;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.huddle_community--title {
+    font-size: 35px;
+    line-height: 3rem;
+}
+
+.huddle_community--paragraph {
+    font-size: 22px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.huddle_community--start {
+    @include flex-display;
+    justify-content: center;
+}
+
+.huddle_community--button {
+    width: 259px;
+    padding: 1rem;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: hsl(0deg, 0%, 100%);
+    border-radius: 50px;
+    margin: 4rem 0;
+    box-shadow: 0px 1px 16px 0px #000;    
+}
+
+.huddle_community--screenshot {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.huddle_community--message-form {
+    @include flex-display;
+    flex-direction: column;
+    gap: 7rem;
+    margin: 3rem 0;
+
+    h3 {
+        font-size: 52px;
+        margin: 0;
+    }
+
+    .huddle_community--heading {
+        font-size: 20px;
+        color: hsl(192, 100%, 9%);
+    }
+}
+
+@media (min-width: 900px) {
+    .huddle_community--paragraph {
+        padding: 31px 16rem;
+    }
+
+    .huddle_community--message-form {
+        @include flex-display;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}

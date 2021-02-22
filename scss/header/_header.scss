@@ -1,0 +1,27 @@
+@import '../mixin';
+
+.huddle_header--container {
+    @include auto-width;
+    @include flex-display;
+}
+
+.huddle_header--logo {
+    @include reset-anchor;
+    @include flex-display;
+    gap: 10px;
+    color: #000;
+
+    img {
+        width: 160px;
+    }
+}
+
+.huddle_header--button {
+    width: 134px;
+    padding: 12px 1rem;
+    background-color: transparent;
+    border-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    color: hsl(322, 100%, 66%);
+}
+

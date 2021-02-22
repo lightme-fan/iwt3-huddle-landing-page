@@ -1,0 +1,22 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin auto-width {
+    max-width: 1114px;
+    margin: auto;
+    padding: 1rem;
+}
+
+@mixin flex-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin reset-anchor {
+    text-decoration: none;
+    color: auto;
+}
